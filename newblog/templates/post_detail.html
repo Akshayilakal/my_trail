@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<h1>{{ post.title }}</h1>
+{{ post.text}}<br/>
+{{ post.created_time }}<br/>
+{{ post.auther}}
+
+<a href="{%url 'post_delete' pk=post.pk %}">delete</a><br/>
+<a href="{%url 'edit_post' pk=post.pk %}">update</a>
+
+
+</body>
+</html>

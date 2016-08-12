@@ -1,0 +1,12 @@
+<html>
+<body>
+
+{% for item in list %}
+
+<a h href="{% url 'detail' pk=item.pk %}">{{item.title}}<br/></a>
+
+{% endfor %}
+
+
+</body>
+</html>
